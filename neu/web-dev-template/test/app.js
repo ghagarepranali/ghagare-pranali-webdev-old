@@ -16,7 +16,7 @@ module.exports = function(app)
 
     // made changes to support heroku
     if(process.env.MONGODB_URI){
-        connectionString = process.env.MONGODB_URI
+        connectionString = process.env.MONGODB_URI;
     }
 
     var mongoose = require("mongoose");
